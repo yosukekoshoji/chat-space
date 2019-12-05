@@ -16,7 +16,7 @@
 ## groupsテーブル
 Column|Type|Options|
 |------|----|-------|
-|name|null: false|
+|name|string|null: false|
 
 
 ###Association
