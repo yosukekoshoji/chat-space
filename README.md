@@ -17,7 +17,7 @@
 Column|Type|Options|
 |------|----|-------|
 |name|null: false|
-|user_id|integer|null: ture|
+
 
 ###Association
 - has_many :comments
@@ -29,6 +29,8 @@ Column|Type|Options|
 |------|----|-------|
 |text|string|-------|
 |photo|image|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ###Association
 - belongs_to :user
