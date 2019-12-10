@@ -1,0 +1,54 @@
+.chat_main
+  .chat_main__header
+    .chat_main__header__left_box
+      %h2.chat_main__header__left_box__group_name
+        テスト
+      %h2.chat_main__header__left_box__member
+        Member：
+    .chat_main__header__edit_btn
+      = link_to "Edit", "#", class:"right-header__button"
+     
+  .chat_main__message
+    .chat_main__message__info
+      .chat_main__message__info__name
+        kosho
+      .chat_main__message__info__time
+        2020/02/14
+    .chat_main__message__comment
+      %p aaaaaaaaaaaa
+    .chat_main__message__info
+      .chat_main__message__info__name
+        aaa
+      .chat_main__message__info__time
+        2020/02/14
+    .chat_main__message__time 
+    .chat_main__message__comment
+      %p aaaaaaaaaaaa      
+
+    .chat_main__message__info
+      .chat_main__message__info__name
+        aaa
+      .chat_main__message__info__time
+        2020/02/14
+    .chat_main__message__time 
+    .chat_main__message__comment
+      %p aaaaaaaaaaaa
+
+    .chat_main__message__info
+      .chat_main__message__info__name
+        aaa
+      .chat_main__message__info__time
+        2020/02/14
+    .chat_main__message__time 
+    .chat_main__message__comment
+      %p aaaaaaaaaaaa
+  .chat_main__footer  
+    .chat_main__footer__form
+      .chat_main__footer__form__comment
+        鼻
+      .chat_main__footer__form__image
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{class: "fail_select", type: "file"}
+    .chat_main__footer__send_btn
+      Send
