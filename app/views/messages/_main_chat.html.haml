@@ -1,54 +1,28 @@
-.chat_main
-  .chat_main__header
-    .chat_main__header__left_box
-      %h2.chat_main__header__left_box__group_name
-        テスト
-      %h2.chat_main__header__left_box__member
-        Member：
-    .chat_main__header__edit_btn
-      = link_to "Edit", "#", class:"right-header__button"
-     
-  .chat_main__message
-    .chat_main__message__info
-      .chat_main__message__info__name
-        kosho
-      .chat_main__message__info__time
-        2020/02/14
-    .chat_main__message__comment
-      %p aaaaaaaaaaaa
-    .chat_main__message__info
-      .chat_main__message__info__name
-        aaa
-      .chat_main__message__info__time
-        2020/02/14
-    .chat_main__message__time 
-    .chat_main__message__comment
-      %p aaaaaaaaaaaa      
+.header
+  .header__left_box
+    %p= @group.name
+    .header__left_box__member
+      Member:
+      - @group.users.each do |user|
+        = user.name
+    .header__edit_btn
+      = link_to "Edit", edit_group_path(@group), class:"right-header__button"
+  .messages
+    = render @messages
 
-    .chat_main__message__info
-      .chat_main__message__info__name
-        aaa
-      .chat_main__message__info__time
-        2020/02/14
-    .chat_main__message__time 
-    .chat_main__message__comment
-      %p aaaaaaaaaaaa
-
-    .chat_main__message__info
-      .chat_main__message__info__name
-        aaa
-      .chat_main__message__info__time
-        2020/02/14
-    .chat_main__message__time 
-    .chat_main__message__comment
-      %p aaaaaaaaaaaa
+.chat_main   
+  
   .chat_main__footer  
-    .chat_main__footer__form
-      .chat_main__footer__form__comment
-        鼻
-      .chat_main__footer__form__image
-        %label{class: "input-box__image"}
-          = icon('fas', 'image')
-          %input{class: "fail_select", type: "file"}
-    .chat_main__footer__send_btn
-      Send
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .chat_main__footer__form
+        .chat_main__footer__form__comment
+          
+      .chat_main__footer__image
+      = f.label :image, class: 'form__select' do
+        = icon('fas', 'image', class: 'icon')
+        = f.file_field :image, class: 'hidden'
+          
+      .chat_main__footer__send_btn
+        = f.submit 'Send', class: 'form__submit'
+  
