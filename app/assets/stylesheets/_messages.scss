@@ -38,17 +38,14 @@
         display:flex;
         a{
           color:#ffffff;
+          padding-right:5px;
         }
       }  
     }
   }
 
   &__group_box{
-    &__group_name{
-      
-      p{
-      }
-    }
+
     &__message_log{
       margin-bottom:40px;
       p{
@@ -57,17 +54,23 @@
     }
   }
   .groups{
-
+    padding-left:20px;
+    
     .group{
       padding-top:20px;
       padding-bottom:5px;
+      
+        
+      
       &__name{
         color:#ffffff;
         font-size: 15px;
+        
       }
       &__message{
         color: #ffffff;
         font-size:15px;
+        
       }
     }
   }
@@ -129,6 +132,10 @@
       position: absolute;
       right: 50px;
       top: 30px;
+    }
+    .right-header__button{
+      text-decoration: none;
+      color:skyblue;
     }
   }
   .upper-message{
@@ -232,7 +239,9 @@
         height:50px;
         
       }
-      
+      .form__submit:visited{
+        color:skyblue;
+      }
       
       
     }
@@ -245,6 +254,7 @@
       top:41%;
       
     }
+    
   }
 }
 }
