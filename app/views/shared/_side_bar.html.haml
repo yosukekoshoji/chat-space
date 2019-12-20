@@ -5,10 +5,10 @@
         = current_user.name
       .side_bar__header__item_box__icons
         .side_bar__header__item_box__icons__new-group
-        = link_to new_group_path do
+        = link_to new_group_path, class: "border" do
           = icon('fas','edit') 
         .side_bar__header__item_box__icons__edit-user
-        = link_to edit_user_path(current_user) do
+        = link_to edit_user_path(current_user), class: "border" do
           = icon('fas', 'cog', class: 'icon')
 
 
