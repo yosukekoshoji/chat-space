@@ -60,21 +60,21 @@
       padding-top:20px;
       padding-bottom:5px;
       
-        
+    
+    .border{
+      text-decoration: none;
+    }
+    
+    &__name{
+      color:#ffffff;
+      font-size: 15px;
+    }
+    &__message{
+      color: #ffffff;
+      font-size:15px;
       
-      &__name{
-        color:#ffffff;
-        font-size: 15px;
-        
-      }
-      &__message{
-        color: #ffffff;
-        font-size:15px;
-        
-      }
-  .border{
-    text-decoration: none;
-  }
+    }
+  
     }
   }
   
@@ -252,12 +252,14 @@
       display: none;
     }
     .icon{
-      position: absolute;
-      right:12%;
-      top:41%;
+      position: fixed;
+      right:170px;
+      bottom:36px;
     }
   }
 }
 }
 
-
+.groups > a {
+  text-decoration: none;
+}
