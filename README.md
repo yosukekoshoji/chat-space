@@ -22,8 +22,8 @@ Chat Space
 
 ## 📗 アプリ機能
 ## 1.ユーザー登録/ログイン/ログアウト機能
-<img width="300" alt="ログイン" src="https://user-images.githubusercontent.com/58423182/83343099-30763680-a331-11ea-8129-7bf628593211.png">
-<img width="300" alt="サインイン" src="https://user-images.githubusercontent.com/58423182/83343102-31a76380-a331-11ea-8222-c214e9dfc646.png">
+<img width="600" alt="ログイン" src="https://user-images.githubusercontent.com/58423182/83343099-30763680-a331-11ea-8129-7bf628593211.png">
+<img width="600" alt="サインイン" src="https://user-images.githubusercontent.com/58423182/83343102-31a76380-a331-11ea-8222-c214e9dfc646.png">
 
 ## 2.コメント投稿機能
 ## 3.コメント編集/削除 機能
