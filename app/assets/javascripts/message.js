@@ -41,7 +41,7 @@ $(function(){
 
   
   $('#new_message'). on('submit',function(e){
-    e.preventDefault();
+    e.preventDefault()
     var formData = new FormData(this);
     var url = $(this).attr('action')
     $.ajax({
@@ -84,9 +84,6 @@ $(function(){
         $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
       
     })
-    .fail(function(){
-      alert('error');
-    });
   }}
   setInterval(reloadMessages, 7000);
     
