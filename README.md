@@ -1,6 +1,32 @@
 ## 📗 アプリ名
 Chat Space
+====
 
+## 📗 制作背景
+プログラミング学習の一環で、チャット機能を持つアプリケーションを作る事になりました。
+プログラミングにおいて必要な要素を詰め込んだものとなっております。
+
+## 📗 ログイン情報
+- URL: http://18.177.245.47/
+- Email: hogehoge@gmail.com
+- password: hogehoge
+
+## 📗 開発環境
+- Ruby 2.5.1
+- Ruby on Rails 5.2.4.2
+- Jquery 
+- MySQL 5.6.43
+- VSCode（Visual Studio Code）
+- AWS(デプロイ)
+- AWS S3
+
+## 📗 アプリ機能
+## 1.ユーザー登録/ログイン/ログアウト機能
+![新規登録](https://user-images.githubusercontent.com/58423182/83343102-31a76380-a331-11ea-8222-c214e9dfc646.png "singin")
+![ログイン](https://user-images.githubusercontent.com/58423182/83343099-30763680-a331-11ea-8129-7bf628593211.png "login")
+## 2.コメント投稿機能
+## 3.コメント編集/削除 機能
+## グループ作成/編集/削除 機能
 
 ## usersテーブル
 
